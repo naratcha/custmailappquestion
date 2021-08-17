@@ -24,7 +24,13 @@ public class CustomerMailApplication {
                 customer = new RegularCustomer();
                 break;
             //complete MountainCustomer
+            case "Mountain":
+                customer = new MountainCustomer();
+                break;
             //complete DelinquentCustomer 
+            case "Delimquent":
+                customer = new DelinquentCustomer();
+                break;
         }
     }
     public String generateMail() {
